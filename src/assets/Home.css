@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body #fullheight{
+    min-height: 100% !important;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.containers{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    font-weight: 500;
+}
+h1{
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    color: #292929;
+    padding-top: 5%;
+}
+#AddTodo{
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    margin: 0 auto;
+    border: solid 3px #603fe3;
+    width: 90%;
+    height: 15%;
+    border-radius: 10px;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#AddTodo button{
+    width: 91%;
+    height: 30%;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background-color: #603fe3;
+    color: #FFFFFF;
+    outline: none;
+    border-radius: 10px;
+}
+#AddTodo input{
+    width: 90%;
+    height: 30%;
+    border: solid 2px #603fe3;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    font-family : inherit;
+    color: #292929;
+}
+input::-webkit-input-placeholder {
+    color:#292929;
+    padding-left: 1%;
+}
+  
+
+.toDoSpawn{
+    width: 100%;
+    display: block;
+    padding-top: 2vh;
+}
+
+.inTodoSpawn{
+    width: 95%;
+    height: 5vh;
+    background-color: #FFFFFF;
+    border: solid #603fe3 3px;
+    border-radius: 5px;
+    margin-bottom: 3vh;
+    margin: 0 auto;
+    margin-bottom: 4%;
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+
