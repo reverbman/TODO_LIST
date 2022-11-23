@@ -81,12 +81,14 @@ input::-webkit-input-placeholder {
     display: flex;
     align-items: center;
     font-size: 13px;
-}
-.inTodoSpawn:nth{
-    display: flex;
-    justify-content: flex-end;
-}   
 
-.inTodoSpawn #trash{
-    height: 80%;
+}
+ 
+
+.inTodoSpawn img{
+    height: 75%;
+}
+#edit{
+    position: relative;
+    left: 39%;
 }
