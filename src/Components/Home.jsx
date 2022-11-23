@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../assets/Home.css'
-import logo from '../assets/img/trash.png'
+import trash from '../assets/img/trash.png'
 
 
 export default function Home() {
@@ -15,7 +15,6 @@ export default function Home() {
         <div className="containers">
             <div id="header">
                 <h1>TO DO LIST</h1>
-                <img src={logo}></img>
             </div>
             <div id="AddTodo">
                 <input id='AddTodoInpt' type="text" placeholder='New todo' onChange={(e) => {
@@ -28,7 +27,7 @@ export default function Home() {
             </div>
             <div className="toDoSpawn">
                 {updateArr.map((to) => (
-                    <div className='inTodoSpawn'>{to} <div id="img"></div> </div>
+                    <div className='inTodoSpawn'>{to} <img id='trash' src={trash}></img> </div>
                 ))}
             </div>
             
