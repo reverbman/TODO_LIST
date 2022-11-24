@@ -1,13 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TODO LIST</title>
+</head>
+
+<body>
+  <div class="containers">
+    <div id="header">
+      <h1>TO DO LIST</h1>
+    </div>
+    <div id="AddTodo">
+      <input id='AddTodoInpt' type="text" placeholder='New todo' autocomplete="off"  />
+      <button id='AddTodoBtn' onclick="addDiv();">Add new task</button>
+    </div>
+    <div class="toDoSpawn">
+   
+        <p> </p>
+        <!-- <div id="imgblock">
+          <img id='edit' src="assets/img/edit.png"></img>
+          <img id='trash' src="assets/img/trash.png"></img> -->
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
