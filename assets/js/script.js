@@ -32,16 +32,16 @@ function addDiv() {
     blockImg.id = ('imgBlock');
     inTodoSpawn.appendChild(blockImg);
     let valid = document.createElement('img');
-    let edit = document.createElement('img');
+    let chevron = document.createElement('img');
     let trash = document.createElement('img');
     arr.push(trash.value);
     valid.src = 'assets/img/validds.png';
     valid.style.backgroundColor = "none";
-    edit.src = 'assets/img/edit.png';
+    chevron.src = 'assets/img/chevron.png';
     trash.src = 'assets/img/trash.png';
     trash.id = "trash";
     blockImg.appendChild(valid);
-    blockImg.appendChild(edit);
+    blockImg.appendChild(chevron);
     blockImg.appendChild(trash);
     date.classList.add("none");
     textAreaEdit.classList.add("none");
@@ -53,8 +53,9 @@ function addDiv() {
     trash.addEventListener('click', function () {
         inTodoSpawn.remove();
     })
-    edit.addEventListener("click", function () {
+    chevron.addEventListener("click", function () {
         inTodoSpawn.classList.toggle('anim');
+        chevron.classList.toggle('rotateChevron');
         console.log(inTodoSpawn)
         let value = pIntodo.id;
         if (inTodoSpawn.classList.contains('anim')) {
