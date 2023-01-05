@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+h1{
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+    min-width: 375px !important;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto  ;
+  margin-top: -42px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  border: solid 3px #440BD4;
+  background-color: transparent;
+}
+.form input {
+  font-family: 'Montserrat', sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 10px;
+  border: solid 3px #440BD4;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+input::-webkit-input-placeholder {
+  color: white;
+  opacity: 70%;
+}
+.form button {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #440BD4;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+body {
+background-color: #141417;    
+}

@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    border: 0;
+}
+*:focus {
+    outline: 0;
 }
 html, body #fullheight{
     min-height: auto !important;
     min-width: 375px !important;
+    background-color: #141417;
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -13,7 +19,7 @@ body{
 }
 .containers{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #141417;
     font-weight: 500;
    
@@ -31,17 +37,17 @@ h1{
     align-items : center;
     margin: 0 auto;
     border: solid 3px #440BD4;
-    width: 90%;
-    height: 15%;
+    padding: 20px;
     border-radius: 10px;
     justify-content: center;
-    gap: 12px;
+    gap: 15px;
     margin-top: 3%;
     margin-bottom: 5%;
+    width: 80%;
 }
 #AddTodo button{
-    width: 91%;
-    height: 30%;
+    width: 100%;
+    padding: 15px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
     border: none;
@@ -61,6 +67,9 @@ h1{
     font-family : inherit;
     background-color: #141417;
     padding-left: 2%;
+    resize: none;
+    padding: 15px;
+    font-size: 14px;
 }
 input::-webkit-input-placeholder {
     color: white;
@@ -78,7 +87,7 @@ input::-webkit-input-placeholder {
 
 .inTodoSpawn{
     width: 95%;
-    height: 5vh;
+    height: 8vh;
     background-color: #FFFFFF;
     border: solid #440BD4 3px;
     border-radius: 5px;
@@ -91,11 +100,12 @@ input::-webkit-input-placeholder {
     font-size: 13px;
     justify-content: space-between;
     background-color: #141417;
+    
 
 }
  #imgBlock img:not(.valid){
-    width: 48%;
-    height: 4vh;
+    width: 25px;
+    height: 25px;
 
  }
  #imgBlock {
@@ -105,23 +115,75 @@ input::-webkit-input-placeholder {
     padding-right: 5px;
  }
  .valid{
-    height: 30px;
+    height: 27px;
     border-radius: 100px;
     background-color: #cd418b;
  }
  .anim:not(#imgBlock){
-    animation: edit 1s linear forwards;
+    animation: edit .2s linear  forwards;
  }
 
  @keyframes edit {
     0%{
-        height: 5vh;
+        padding-bottom: 0%;
     }
     100%{
-        height: 30vh;
+        padding-bottom: 70%;
 
     }
  }
  p{
     color: #FFFFFF;
  }
+.editText {
+    background-color: transparent;
+    color: #FFFFFF;
+    display: flex;
+    border: none;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5%;
+    letter-spacing: 1px;
+    resize: none;
+}
+.none{
+    display: none;
+}
+@keyframes dateAnim{
+    0%{
+        margin-top: 15%;
+    }
+    100%{
+        margin-top: 505px;
+    }
+}
+.apparition{
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: solid 3px #440BD4;
+    border-radius: 5px;
+    padding: 5px;
+    animation: dateAnim 0.2s linear forwards;
+}
+.apparition::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    font-size: 20px;
+    margin-left: -15px;
+}
+.textAreaEdit{
+    position: absolute;
+    margin-top: 65%;
+    height: 30%;
+    width: 90%;
+    border: solid 3px #440BD4;
+    background-color: transparent;
+    resize: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    resize: none;
+    display: flex;
+}
+
